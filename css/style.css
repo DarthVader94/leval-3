@@ -1,78 +1,116 @@
-
-
-.flex-container {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   
+* {
+   box-sizing: border-box;
 }
 
-.header {
-   height: 65px;
-   width: 100%;
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+   --color-white: white;
+   --color-border: rgb(145, 145, 212);
+   --color-silver: #CACACA;
+}
+
+ul {
+   list-style: none;
+}
+
+.flex {
    display: flex;
+}
+
+.container {
+   max-width: 1770px;
+}
+
+/* HEADER */
+
+.header {
    background: white;
+   border-bottom: 5px solid var(--color-border);
+}
+
+.logo__header {
+   justify-content: space-between;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+}
+
+.nav__list {
+   display: flex;
+}
+
+.nav__item {
+   margin-right: 10px;
+}
+
+/* HERO */
+
+.hero {
    border-bottom: 5px solid rgb(145, 145, 212);
 }
 
-.text-headr {
-   cursor: pointer;
-   text-decoration: underline;
-   font-size: 12px;
+.hero__nav {
    display: flex;
-   padding-left: 580px;
+   align-items: center;
+   justify-content: flex-end;
+   width: 100%;
+   height: 35px;
+   background-color: silver;
 }
 
-.img {
-   height: 90px;
-   width: 100%;
-   display: flex;
-} 
-
-
-.vertical-menu {
-   height: 30px;
-   width: 100%;
-   background: rgb(204, 214, 218);
-   display: flex;
-   border-bottom: 2px solid black;
-}
-
-.middle {
-   display: flex;
-   flex-direction: row;
+.hero__img {
    width: 100%;
 }
 
-.aside {
-   background: rgb(228, 205, 250);
+.hero__list {
+   margin: 0;
+   margin-right: 120px;
+   column-gap: 20px;
    display: flex;
-   height: 450px;
-   width: 230px;
+   
 }
 
+/* ABOUT */ 
 
-.main {
-   background: rgb(255, 255, 255);
-   width: 100%;
-   height: 450px;
-   display: flex; 
-}
-
-.main-text {
-cursor: pointer;
-text-decoration: underline;
-}
-
-.text-footer {
-   line-height: 2px;
-   padding: 10px 20px 10px;
-}
-
-.footer {
-   height: 65px;
-   width: 100%;
+.about__content {
    display: flex;
-   background: rgb(117 126 205);
-   font-size: 11px;
+}
+
+.right__list {
+   display: flex;
+}
+
+.left__title {
+   margin: 0;
+   padding: 5px 20px 5px 10px;
+   background-color: rgb(83, 81, 169, 0.86);
+   color: white;
+}
+
+.nav__about {
+   height: 500px;
+   background-color: #CACACA;
+}
+
+.about__list {
+   margin: 0;
+}
+
+.right__nav {
+   display: flex;
+}
+
+.right__list {
+   column-gap: 15px;
+}
+
+.right__title {
+   border-bottom: 1px solid var(--color-silver);
 }
